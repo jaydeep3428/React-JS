@@ -8,7 +8,8 @@ function Input_field() {
     }
     return (
         <div>
-            <h2>Get Input Box Value!</h2>
+            <h1>2.</h1>
+            <h2>- Get Input Box Value And Print The Value!</h2>
             {
                 print ?
                     <h2>{data}</h2>

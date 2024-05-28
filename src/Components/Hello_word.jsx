@@ -1,8 +1,10 @@
 function Hello_word() {
     return (
         <div className="App">
-            <h1>Hello Word!</h1>
-            <h1>Hello React!</h1>
+            <h1>1.</h1>
+            <h2>- Simple Hello Word Program Using Function And Class Components!</h2>
+            <h2>Hello Word!</h2>
+            <h2>Hello React!</h2>
         </div>
     );
 }
