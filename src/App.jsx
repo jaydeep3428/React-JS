@@ -42,11 +42,11 @@ function App() {
       {/* <h1>{data}</h1>
       <button onClick={click}>Click Me!</button> */}
 
-      {/* <div className='App'>
+      <div className='App'>
         <h1>Props In React!</h1>
         <Students name={name} />
         <button onClick={sub}>Update Name</button>
-      </div> */}
+      </div>
     </>
   )
 }
