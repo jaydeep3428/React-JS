@@ -1,8 +1,10 @@
 import { useState } from 'react'
+import React from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Students from './Components/Students'
+import Render_ex from './Components/Render_ex'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -12,10 +14,12 @@ function App() {
   //   setData(data + " Makwana");
   // }
 
-  const [name, SetName] = useState("Jaydeep");
-  function sub() {
-    SetName(name + " Makwana")
-  }
+  // const [name, SetName] = useState("Jaydeep");
+  // function sub() {
+  //   SetName(name + " Makwana")
+  // }
+
+  const [name, setName] = React.useState('Jaydeep')
 
   return (
     <>
@@ -42,10 +46,16 @@ function App() {
       {/* <h1>{data}</h1>
       <button onClick={click}>Click Me!</button> */}
 
-      <div className='App'>
+      {/* <div className='App'>
         <h1>Props In React!</h1>
         <Students name={name} />
         <button onClick={sub}>Update Name</button>
+      </div> */}
+
+      <div className="App">
+        {/* <h2>Render Method!</h2> */}
+        <Render_ex name={name} />
+        <button onClick={() => name + setName('Makwana')}>Update</button>
       </div>
     </>
   )
