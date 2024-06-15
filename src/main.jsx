@@ -11,6 +11,9 @@ import './index.css'
 import Component_did_mount from './Components/Component_did_mount.jsx'
 import Component_did_update from './Components/Component_did_update.jsx'
 import Should_component_update from './Components/Should_component_update.jsx'
+import Useeffect_ex from './Components/Useeffect_ex.jsx'
+import Usememo_ex from './Components/Usememo_ex.jsx'
+import Useref_ex from './Components/Useref_ex.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -35,5 +38,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Component_did_update />
     <hr />
     <Should_component_update />
+    <hr />
+    <Useeffect_ex />
+    <hr />
+    <Usememo_ex />
+    <hr />
+    <Useref_ex />
   </React.StrictMode>,
 )
