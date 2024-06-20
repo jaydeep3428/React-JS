@@ -7,32 +7,37 @@ import Input_field from './Components/Input_field.jsx'
 import Toggle from './Components/Toggle.jsx'
 import Constructor_ex from './Components/Constructor_ex.jsx'
 import Render_ex from './Components/Render_ex.jsx'
-import './index.css'
+// import './index.css'
 import Component_did_mount from './Components/Component_did_mount.jsx'
 import Component_did_update from './Components/Component_did_update.jsx'
 import Should_component_update from './Components/Should_component_update.jsx'
 import Useeffect_ex from './Components/Useeffect_ex.jsx'
 import Usememo_ex from './Components/Usememo_ex.jsx'
 import Useref_ex from './Components/Useref_ex.jsx'
+{
+  /* The following line can be included in your src/index.js or App.js file */
+}
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Hello_word />
-    <hr />
+    {/* <Hello_word /> */}
+    {/* <hr /> */}
     {/* <Students name={'Jaydeep'} /> */}
-    <Input_field />
+    {/* <Input_field />
     <hr />
-    <Students name={"Jaydeep"} />
+    <Students name={"Jaydeep"} /> */}
     {/* <App /> */}
 
-    <hr />
+    {/* <hr />
     <Toggle />
     <hr />
     <Constructor_ex />
-    <hr />
+    <hr /> */}
     {/* <Render_ex /> */}
     <App />
-    <hr />
+    {/* <hr />
     <Component_did_mount />
     <hr />
     <Component_did_update />
@@ -43,6 +48,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <hr />
     <Usememo_ex />
     <hr />
-    <Useref_ex />
+    <Useref_ex /> */}
   </React.StrictMode>,
 )

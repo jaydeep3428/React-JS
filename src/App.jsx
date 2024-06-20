@@ -5,6 +5,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Students from './Components/Students'
 import Render_ex from './Components/Render_ex'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './Components/Home'
+import About from './Components/About'
+import Navbar from './Components/NavBar'
+import Blog from './Components/Blog'
+import Contact from './Components/Contact'
+import Product from './Components/Product'
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -19,7 +26,7 @@ function App() {
   //   SetName(name + " Makwana")
   // }
 
-  const [name, setName] = React.useState('Jaydeep')
+  // const [name, setName] = React.useState('Jaydeep')
 
   return (
     <>
@@ -52,10 +59,30 @@ function App() {
         <button onClick={sub}>Update Name</button>
       </div> */}
 
-      <div className="App">
-        {/* <h2>Render Method!</h2> */}
+      {/* <div className="App">
+        <h2>Render Method!</h2>
         <Render_ex name={name} />
         <button onClick={() => name + setName('Makwana')}>Update</button>
+      </div> */}
+
+      <div className="main">
+        {/* <nav> */}
+        {/* <div>logo</div> */}
+        {/* <div className='App'> */}
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path='/product' element={<Product />} />
+            <Route path='/blog' element={<Blog />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/' element={<Home />} />
+            <Route path='/*' element={<div>this is 4o4 error page</div>} />
+
+          </Routes>
+        </BrowserRouter>
+        {/* </div> */}
+        {/* </nav> */}
       </div>
     </>
   )
