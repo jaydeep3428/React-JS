@@ -3,6 +3,7 @@ import { FaCartShopping } from "react-icons/fa6";
 import { IoPricetagsOutline } from "react-icons/io5";
 import { BsShieldPlus } from "react-icons/bs";
 import { MdEqualizer } from "react-icons/md";
+import watch from "../assets/banner-image (1).png"
 
 function Home() {
     return (
@@ -15,7 +16,7 @@ function Home() {
                             <NavLink to='/Product' className="btn btn-medium px-5 py-3 bg-dark text-light border-0 rounded-0 text-uppercase">Shop product</NavLink>
                         </div>
                         <div className="col-md-5">
-                            <img src="src\assets\banner-image (1).png" className="main-img img-fluid" alt="#" />
+                            <img src={watch} className="main-img img-fluid" alt="#" />
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { TiAdjustBrightness } from "react-icons/ti";
+import logo from '../assets/main-logo.png';
 
 
 function NavBar() {
@@ -8,7 +9,7 @@ function NavBar() {
             <div className="container">
                 <nav className="navbar navbar-expand-lg">
                     <div className="container-fluid p-0">
-                        <img src="../src/assets/main-logo.png" className="navbar-brand img-fluid" alt="#" />
+                        <img src={logo} className="navbar-brand img-fluid" alt="#" />
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav_ul" aria-controls="nav_ul" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
