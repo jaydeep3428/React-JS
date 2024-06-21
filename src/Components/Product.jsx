@@ -33,7 +33,6 @@ function Product() {
                                         </li>
                                         <li>
                                             <NavLink to="/Contact">Contact Us</NavLink>
-
                                         </li>
                                     </nav>
                                 </div>
