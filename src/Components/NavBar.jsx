@@ -3,8 +3,6 @@ import { TiAdjustBrightness } from "react-icons/ti";
 import logo from '../assets/main-logo.png';
 import React, { useRef } from "react";
 
-
-
 function NavBar() {
     const setDarkMode = () => {
         document.querySelector("body").setAttribute('data-theme', 'dark')
@@ -34,12 +32,10 @@ function NavBar() {
                                 <li className="nav-item"><NavLink className="" to='/About'>ABOUT</NavLink ></li>
                                 <li className="nav-item"><NavLink className="" to='/contact'>CONTACT US</NavLink ></li>
                             </ul>
-
                             <div className="ms-auto d-flex dark_mode">
                                 <input type="checkbox" onClick={toggleTheme} className="dark_mode_input" id="darkmode-toggle" />
                                 <h3 className="darkmode-toggle" for="dark_mode_input"><TiAdjustBrightness /></h3>
                             </div>
-
                         </div>
                     </div>
                 </nav>
