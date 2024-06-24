@@ -1,18 +1,19 @@
 import { NavLink } from "react-router-dom";
-import { TiAdjustBrightness } from "react-icons/ti";
+import { FaSun, FaMoon } from "react-icons/fa";
 import logo from '../assets/main-logo.png';
-import React, { useRef } from "react";
+import React, { useState } from "react";
 
 function NavBar() {
-    const setDarkMode = () => {
-        document.querySelector("body").setAttribute('data-theme', 'dark')
-    }
-    const setLightMode = () => {
-        document.querySelector("body").setAttribute('data-theme', 'light')
-    }
-    const toggleTheme = (e) => {
-        if (e.target.checked) setDarkMode();
-        else setLightMode();
+    const [darkMode, setDarkMode] = useState(false);
+
+    const toggleTheme = () => {
+        if (darkMode) {
+            document.querySelector("body").setAttribute('data-theme', 'light');
+            setDarkMode(false);
+        } else {
+            document.querySelector("body").setAttribute('data-theme', 'dark');
+            setDarkMode(true);
+        }
     }
 
     return (
@@ -33,8 +34,17 @@ function NavBar() {
                                 <li className="nav-item"><NavLink className="" to='/contact'>CONTACT US</NavLink ></li>
                             </ul>
                             <div className="ms-auto d-flex dark_mode">
-                                <input type="checkbox" onClick={toggleTheme} className="dark_mode_input" id="darkmode-toggle" />
-                                <h3 className="darkmode-toggle" for="dark_mode_input"><TiAdjustBrightness /></h3>
+                                <input
+                                    type="checkbox"
+                                    onChange={toggleTheme}
+                                    checked={darkMode}
+                                    className="dark_mode_input"
+                                    id="darkmode-toggle"
+                                    style={{ display: 'none' }}
+                                />
+                                <label htmlFor="darkmode-toggle" className="darkmode-toggle" style={{ cursor: 'pointer' }}>
+                                    {darkMode ? <FaSun size={20} /> : <FaMoon size={20} />}
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -44,5 +54,4 @@ function NavBar() {
     )
 }
 
-export default NavBar
-
+export default NavBar;
