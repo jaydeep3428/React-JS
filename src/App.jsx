@@ -13,6 +13,7 @@ import Blog from './Components/Blog'
 import Contact from './Components/Contact'
 import Product from './Components/Product'
 import Footer from './Components/Footer'
+import SingleProduct from './Components/SingleProduct'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path='/product' element={<Product />} />
+            <Route path='/product/singleproduct/:id' element={<SingleProduct />} />
             <Route path='/blog' element={<Blog />} />
             <Route path='/about' element={<About />} />
             <Route path='/contact' element={<Contact />} />

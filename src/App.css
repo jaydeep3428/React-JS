@@ -80,7 +80,8 @@ svg {
     flex-direction: column;
   }
 }
-.images {
+.card .images {
   object-fit: contain;
+  width: 100%;
   height: 275px;
 }
